@@ -3,7 +3,7 @@
 > Provide repository items to allow you create TMS Web Core projects, like web apps, electron apps and PWA apps.
 
 <p align="center">
-<img width="70%" src="https://raw.githubusercontent.com/qadram/repository.vscode.extensions/main/items_animation.gif" />
+<img width="70%" src="https://raw.githubusercontent.com/qadram/repository.tms.web.core/main/items_animation.gif" />
 </p>
 
 # About Repository
