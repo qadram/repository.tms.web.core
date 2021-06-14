@@ -8,7 +8,7 @@
 		"url": "git://github.com/qadram/repository.tms.web.core.git"
 	},
 	"icon": "media/icon_tms.png",
-	"version": "0.0.7",
+	"version": "0.0.9",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
