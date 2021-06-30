@@ -93,7 +93,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 			result.push({
 				'id': 'ext-package-app',
-				'icon': './assets/images/pwaapp.svg',
+				'icon': './assets/images/package.svg',
 				'caption': 'TMS WEB Package',
 				'description': 'A template to create a new TMS WEB Package to create components that can be installed on the tool palette.',
 				'languages': ['Object Pascal'],
