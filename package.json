@@ -1,14 +1,14 @@
 {
 	"name": "repository-tms-web-core",
-	"displayName": "Repository Items for TMS Web Core Projects",
-	"description": "Items to create TMS Web Core Projects, to use with the Repository extension",
+	"displayName": "Repository Items for TMS WEB Core Projects",
+	"description": "Items to create TMS WEB Core Projects, to use with the Repository extension",
 	"publisher": "branchcreation",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/qadram/repository.tms.web.core.git"
 	},
 	"icon": "media/icon_tms.png",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
@@ -38,7 +38,7 @@
 		"vscode": "^1.1.28"
 	},
 	"dependencies": {
-		"generator-tms-web-core": "0.0.3",
+		"generator-tms-web-core": "0.0.4",
 		"yeoman-test": "^3.0.0"
 	}
 }

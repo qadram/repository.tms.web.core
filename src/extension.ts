@@ -19,9 +19,9 @@ export function activate(context: vscode.ExtensionContext) {
 				'id': 'ext-web-app',
 				'icon': './assets/images/webapplication.svg',
 				'caption': 'TMS WEB Application',
-				'description': 'A template to create a new TMS Web Application to run on the browser.',
+				'description': 'A template to create a new TMS WEB Application to run on the browser.',
 				'languages': ['Object Pascal'],
-				'platforms': ['Web'],
+				'platforms': ['WEB'],
 				'types': ['Application'],
 				'projectname': 'Project1.dproj',
 				'fields': [
@@ -38,9 +38,9 @@ export function activate(context: vscode.ExtensionContext) {
 				'id': 'ext-console-app',
 				'icon': './assets/images/consoleapp.svg',
 				'caption': 'TMS WEB Console Application',
-				'description': 'A template to create a new TMS Web Application to run on the browser with a console interface.',
+				'description': 'A template to create a new TMS WEB Application to run on the browser with a console interface.',
 				'languages': ['Object Pascal'],
-				'platforms': ['Web'],
+				'platforms': ['WEB'],
 				'types': ['Application'],
 				'projectname': 'Project1.dproj',
 				'fields': [
@@ -57,7 +57,7 @@ export function activate(context: vscode.ExtensionContext) {
 				'id': 'ext-electron-app',
 				'icon': './assets/images/electronapp.svg',
 				'caption': 'TMS WEB Electron Application',
-				'description': 'A template to create a new TMS Web Electron Application.',
+				'description': 'A template to create a new TMS WEB Electron Application.',
 				'languages': ['Object Pascal'],
 				'platforms': ['Linux', 'Windows', 'macOS'],
 				'types': ['Application'],
@@ -73,12 +73,31 @@ export function activate(context: vscode.ExtensionContext) {
 			});
 
 			result.push({
+				'id': 'ext-miletus-app',
+				'icon': './assets/images/miletusapp.svg',
+				'caption': 'TMS WEB Miletus Application',
+				'description': 'A template to create a new TMS WEB Miletus Application.',
+				'languages': ['Object Pascal'],
+				'platforms': ['Linux', 'Windows', 'macOS'],
+				'types': ['Application'],
+				'projectname': 'Project1.dproj',
+				'fields': [
+					{
+						"name": "gitInit",
+						"label": "Initialize git repository",
+						"type": "boolean",
+						"default": true
+					}
+				]
+			});			
+
+			result.push({
 				'id': 'ext-pwa-app',
 				'icon': './assets/images/pwaapp.svg',
 				'caption': 'TMS WEB PWA Application',
-				'description': 'A template to create a new TMS Progressive Web Application to run on the browser or be installed on the operating system.',
+				'description': 'A template to create a new TMS Progressive WEB Application to run on the browser or be installed on the operating system.',
 				'languages': ['Object Pascal'],
-				'platforms': ['Web'],
+				'platforms': ['WEB'],
 				'types': ['Application'],
 				'projectname': 'Project1.dproj',
 				'fields': [
@@ -97,7 +116,7 @@ export function activate(context: vscode.ExtensionContext) {
 				'caption': 'TMS WEB Package',
 				'description': 'A template to create a new TMS WEB Package to create components that can be installed on the tool palette.',
 				'languages': ['Object Pascal'],
-				'platforms': ['Web'],
+				'platforms': ['WEB'],
 				'types': ['Package'],
 				'projectname': 'Package1.dproj',
 				'fields': [
