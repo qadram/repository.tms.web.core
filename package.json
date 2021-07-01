@@ -38,7 +38,7 @@
 		"vscode": "^1.1.28"
 	},
 	"dependencies": {
-		"generator-tms-web-core": "0.0.4",
+		"generator-tms-web-core": "0.0.7",
 		"yeoman-test": "^3.0.0"
 	}
 }
