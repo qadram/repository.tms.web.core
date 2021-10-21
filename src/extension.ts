@@ -136,7 +136,7 @@ export function activate(context: vscode.ExtensionContext) {
 		 * @param id ID of the item to be executed
 		 * @param params All parameters gathered on the UI
 		 */
-		async execute(id: string, params: any): Promise<string> {
+		async execute(id: string, params: any): Promise<any> {
 			return new Promise<string>((resolve, reject) => {
 				let outputpath = params.outputpath;
 				let prompts = {};
@@ -151,10 +151,11 @@ export function activate(context: vscode.ExtensionContext) {
 				process.chdir(outputpath);
 				let newappfolder = outputpath;
 				//@ts-ignore		
-				helpers.run(path.join(context.extensionPath, 'node_modules', 'generator-tms-web-core', 'generators', 'app'), { cwd: outputpath })
-					.withPrompts(prompts) // Mock the prompt answers
-					.toPromise().then(function () {
-						resolve(newappfolder);
+				let runcontext = helpers.run(path.join(context.extensionPath, 'node_modules', 'generator-tms-web-core', 'generators', 'app'), { cwd: outputpath }).withPrompts(prompts); // Mock the prompt answers
+					
+					runcontext.toPromise().then(function () {	
+						//@ts-ignore		
+						resolve(runcontext.generator.extensionConfig);
 					}, (reason) => {
 						reject(reason);
 					});
