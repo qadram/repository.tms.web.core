@@ -129,6 +129,25 @@ export function activate(context: vscode.ExtensionContext) {
 				]
 			});			
 
+			result.push({
+				'id': 'ext-test-app',
+				'icon': './assets/images/testapp.svg',
+				'caption': 'TMS WEB Unit Test Application',
+				'description': 'A template to create a new TMS WEB Unit Test Application.',
+				'languages': ['Object Pascal'],
+				'platforms': ['WEB'],
+				'types': ['Application'],
+				'projectname': 'Project1.dproj',
+				'fields': [
+					{
+						"name": "gitInit",
+						"label": "Initialize git repository",
+						"type": "boolean",
+						"default": true
+					}
+				]
+			});			
+
 			return (result);
 		},
 		/**
