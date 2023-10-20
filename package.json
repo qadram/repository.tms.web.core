@@ -19,6 +19,7 @@
 		"*"
 	],
 	"main": "./out/extension.js",
+	"browser": "./out/extension.js",
 	"scripts": {
 		"vscode:prepublish": "npm install; npm run compile; npm prune --production",
 		"compile": "tsc -p ./",
