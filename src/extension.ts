@@ -35,6 +35,25 @@ export function activate(context: vscode.ExtensionContext) {
 			});
 
 			result.push({
+				'id': 'ext-bootstrap-app',
+				'icon': './assets/images/webapplication.svg',
+				'caption': 'TMS Bootstrap WEB Application',
+				'description': 'A template to create a new TMS Bootstrap WEB Application to run on the browser.',
+				'languages': ['Object Pascal'],
+				'platforms': ['WEB'],
+				'types': ['Application'],
+				'projectname': 'Project1.dproj',
+				'fields': [
+					{
+						"name": "gitInit",
+						"label": "Initialize git repository",
+						"type": "boolean",
+						"default": true
+					}
+				]
+			});
+
+			result.push({
 				'id': 'ext-console-app',
 				'icon': './assets/images/consoleapp.svg',
 				'caption': 'TMS WEB Console Application',
